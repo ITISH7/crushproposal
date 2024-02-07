@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../css/navbar.module.css";
 import goalPost from "../resources/goalpost.png";
@@ -44,6 +44,7 @@ function NavBar() {
         src={goalPost}
         className={styles.goalpost}
         onClick={() => goalClicked("centre")}
+        alt="abadabajabba"
       ></img>
       <div className={styles.lowernav}>
         <div>
@@ -51,6 +52,7 @@ function NavBar() {
           src={goalPost}
           className={`${styles.goalpost} ${styles.leftgoalkeeper}`}
           onClick={() => goalClicked("left")}
+          alt="abadabajabba"
         ></img>
         </div>
         <div>
@@ -58,6 +60,7 @@ function NavBar() {
           src={goalPost}
           className={`${styles.goalpost} ${styles.rightgoalkeeper}`}
           onClick={() => goalClicked("right")}
+          alt="abadabajabba"
         ></img></div>
       </div>
       <div className={styles.footernav}>
@@ -66,8 +69,10 @@ function NavBar() {
           className={isClicked ? `${animation}` : ""}
           height={100}
           width={100}
+          alt="abadabajabba"
         ></img>
-        <img src={footballer} height={200} className={styles.footboller}></img>
+        <img src={footballer} height={200} className={styles.footboller}
+        alt="abadabajabba"></img>
       </div>
     </div>
   );
