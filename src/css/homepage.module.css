@@ -1,0 +1,34 @@
+.homepage{
+    padding: 1%;
+    background-image: url("../resources/background.png");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 725px;
+}
+.right{
+    background-color: #a50044;
+    height: 760px;
+    overflow: hidden;
+
+}
+.right p{
+    align-items: center;
+    text-align:center;
+    font-size: 35px;
+    color:white;
+    
+}
+
+.yesno{
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.hover{
+    background-color: black;
+    border-radius: 10px;
+    
+}

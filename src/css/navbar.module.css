@@ -1,0 +1,112 @@
+.navbar{
+  text-align: center;
+  }
+.footboller{
+  position: absolute;
+  top:80%;
+  left:47%;
+}
+.football{
+  height:120px;
+  width:120px;
+}
+.despirate{
+  z-index: 2;
+  font-size:35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  animation: despirate1  15s infinite;
+}
+.leftgoalkeeper{
+  transform: rotate(270deg);
+}
+.rightgoalkeeper{
+  transform: rotate(90deg);
+}
+@keyframes despirate1{
+  0%{
+    transform: translateX(-100%);
+  }
+  25%{
+    transform: translateX(10%);
+  }
+  50%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}  
+  .goalpost{
+      height: 100px;
+      width: 200px;
+  }
+  .lowernav{
+      padding-top: 20%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .footernav{
+      padding-top: 8%;
+      text-align: center;
+  }
+  
+  .leftgoal{
+      animation: moveLeft 1s linear;
+  }
+  .rightgoal{
+      animation: moveReft 1s linear;
+  }
+  .centergoal{
+    animation: moveCenter 1s linear;
+  }
+  @keyframes moveLeft {
+      0% {
+        transform: translate(0, 0) rotate(0);
+      }
+      25% {
+        transform: translate(-120px, -50px) rotate(90deg);
+      }
+      50% {
+        transform: translate(-240px, -100px) rotate(180deg);
+      }
+      75% {
+        transform: translate(-360px, -150px) rotate(270deg);
+      }
+      100% {
+        transform: translate(-480px, -220px) rotate(360deg);
+      }
+    }
+    @keyframes moveReft {
+      0% {
+        transform: translate(0, 0) rotate(0);
+      }
+      25% {
+        transform: translate(120px, -50px) rotate(90deg);
+      }
+      50% {
+        transform: translate(240px, -100px) rotate(180deg);
+      }
+      75% {
+        transform: translate(360px, -150px) rotate(270deg);
+      }
+      100% {
+        transform: translate(480px, -220px) rotate(360deg);
+      }
+    }
+    @keyframes moveCenter {
+      0% {
+        transform: translate(0, 0) rotate(0);
+      }
+      25% {
+        transform: translate(0px, -150px) rotate(90deg);
+      }
+      50% {
+        transform: translate(0px, -300px) rotate(180deg);
+      }
+      75% {
+        transform: translate(0px, -450px) rotate(270deg);
+      }
+      100% {
+        transform: translate(0px, -600px) rotate(360deg);
+      }
+    }
