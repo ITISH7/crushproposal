@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/homepage.module.css";
+import Modal from "../components/popup/Modal";
 function YesNoDiv() {
   const [prop, setProp] = useState({
     position: "absolute",
@@ -7,7 +8,13 @@ function YesNoDiv() {
     textAlign: "center",
     transition: "1s ease",
   });
-
+  const [carIsShown , SetCartIsShown]= useState(false);
+  const showCartHandler=()=>{
+    SetCartIsShown(true);
+  } 
+  const hideCardHandler =()=>{
+    SetCartIsShown ( false );
+  }
   function cant() {
     var minHeight = Math.ceil(0);
     var maxHeight = Math.floor(700);
@@ -26,6 +33,9 @@ function YesNoDiv() {
   }
   return (
     <div className={styles.right}>
+      {
+        carIsShown &&<Modal hideCard = {hideCardHandler}> Thank youuu😍😍😁</Modal>
+      }
       <p>
         I have been thinking about this for a long time, would you like to spend
         rest of aga ka kudh soch le yrr
@@ -37,7 +47,7 @@ function YesNoDiv() {
         />
       </div>
       <div className="buttons">
-        <button className="btn" id="yesButton" >
+        <button className="btn" id="yesButton"  onClick={showCartHandler}>
           Yes
         </button>
         <button
