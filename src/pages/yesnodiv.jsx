@@ -24,7 +24,6 @@ function YesNoDiv() {
     });
     console.log("hello");
   }
-  const finalyes = () => {};
   return (
     <div className={styles.right}>
       <p>

@@ -7,8 +7,6 @@ import YesNoDiv from './pages/yesnodiv';
 import {
     createBrowserRouter,
     RouterProvider,
-    Route,
-    Link,
   } from "react-router-dom";
 import Confesion from './pages/weedingcard';
 
